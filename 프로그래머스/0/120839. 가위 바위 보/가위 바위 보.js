@@ -5,5 +5,5 @@ function solution(rsp) {
                     arg === '0' ? '5' : '2';
     })
     
-    return resultArr.join().replaceAll(',','')
+    return resultArr.join('')
 }
