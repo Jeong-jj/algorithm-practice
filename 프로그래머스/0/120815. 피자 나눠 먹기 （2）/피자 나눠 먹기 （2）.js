@@ -1,16 +1,13 @@
 function solution(n) {
-    const justNeedOne = [1, 2, 3, 6];
-    if (justNeedOne.includes(n)) return 1;
-
-    let count = 2;
-    let isFinished = false;
+    let count = 1;
     
-    while (!isFinished) {
+    while (true) {
         if ((6*count)%n === 0) {
-            isFinished = true;
-            return count;
+            break;
         } else {
             count ++;
-        }
+        };
     };
+    
+    return count;
 }
