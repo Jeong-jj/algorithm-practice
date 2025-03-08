@@ -4,5 +4,5 @@ function solution(i, j, k) {
         numbers += l
     };    
 
-    return numbers.split(k+'').length-1;
+    return numbers.split(k).length-1;
 }
