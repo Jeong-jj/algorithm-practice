@@ -1,9 +1,3 @@
 function solution(array) {
-    let count = 0;
-    
-    for (n of array) {
-        count += [...n+''].filter((l)=>l==7).length;
-    };
-    
-    return count;
+    return array.join('').split('7').length - 1
 }
